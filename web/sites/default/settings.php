@@ -785,6 +785,11 @@ $settings['entity_update_backup'] = TRUE;
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
+$settings['file_private_path'] = '../private/files';
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+};
 /**
  * Load local development override configuration, if available.
  *
@@ -800,6 +805,4 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  */
 #
 
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
-};
+
