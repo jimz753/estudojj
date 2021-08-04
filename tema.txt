@@ -1,0 +1,5 @@
+uma views de tabela que vai ser boa pra editar
+(titulo, autor, data de criação, categorias, imagem)
+
+
+uma views que vai filtrar conteudo por query de url
